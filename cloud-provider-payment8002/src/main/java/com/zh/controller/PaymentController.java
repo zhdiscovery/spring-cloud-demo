@@ -16,13 +16,13 @@ public class PaymentController {
     @Resource
     private PaymentService paymentService;
 
+    @Value("${server.port}")
+    private String serverPort;
+
     @GetMapping("/index")
     public String index() {
         return "hello";
     }
-
-    @Value("${server.port}")
-    private String serverPort;
 
     @PostMapping("/payment/create")
     public CommonResult<Integer> create(@RequestBody Payment payment) {
