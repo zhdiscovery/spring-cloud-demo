@@ -1,0 +1,10 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-consumer-consul-order
+  cloud:
+    consul:
+#      host: localhost #默认localhost
+      discovery:
+        service-name: ${spring.application.name}
