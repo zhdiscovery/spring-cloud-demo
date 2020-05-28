@@ -54,7 +54,7 @@ public class OrderController {
 
     @GetMapping("/consumer/payment/lb/get/{id}")
     public CommonResult<Payment> getLB(@PathVariable("id") Long id) {
-        List<ServiceInstance> instanceList = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
+        List<ServiceInstance> instanceList = discoveryClient.getInstances("cloud-payment-service");//服务名大小写都可以
         if (instanceList == null || instanceList.size() <= 0) {
             return null;
         }
