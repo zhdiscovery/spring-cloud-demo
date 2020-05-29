@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 
 @RestController
 @Slf4j
-@DefaultProperties(defaultFallback = "payment_global_fallback_method")
+//@DefaultProperties(defaultFallback = "payment_global_fallback_method")
 public class OrderHystrixController {
 
     @Resource
@@ -30,7 +30,7 @@ public class OrderHystrixController {
 //    @HystrixCommand(fallbackMethod = "paymentInfo_TimeoutHandler", commandProperties = {
 //        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "4000")
 //    })
-    @HystrixCommand
+//    @HystrixCommand
     public String paymentInfo_Timeout(@PathVariable("id") Integer id) {
 //        int err = 1 / 0;
         String result = paymentHystrixService.paymentInfo_Timeout(id);
