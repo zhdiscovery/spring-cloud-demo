@@ -1,5 +1,5 @@
 server:
-  port: 3355
+  port: 3366
 
 spring:
   application:
@@ -11,8 +11,7 @@ spring:
       label: master
       #配置文件名称
       name: config-dev
-      #读取后缀名称，上述2个综合：master分支上config-dev.yml的配置文件
-      #被读取http://config-3344.com:3344/master/config-dev.yml
+      #读取后缀名称
       profile: dev
       #配置中心地址
       uri: http://localhost:3344
