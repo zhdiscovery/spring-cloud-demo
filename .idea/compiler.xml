@@ -26,6 +26,7 @@
         <module name="cloud-stream-rabbitmq-provider8801" />
         <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloud-alibaba-sentinel-service8401" />
         <module name="cloud-consumer-consul-order80" />
         <module name="cloud-config-client-3355" />
         <module name="cloud-gateway-gateway9527" />
