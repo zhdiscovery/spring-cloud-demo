@@ -16,12 +16,15 @@
         <module name="cloud-consumerzk-order80" />
         <module name="cloud-provider-payment8002" />
         <module name="cloud-provider-payment8004" />
+        <module name="cloud-alibaba-provider-payment9001" />
         <module name="cloud-stream-rabbitmq-consumer8803" />
         <module name="cloud-provider-payment8001" />
         <module name="cloud-provider-consul-payment8006" />
         <module name="cloud-consumer-openfeign-order80" />
+        <module name="cloud-alibaba-provider-payment9002" />
         <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-stream-rabbitmq-provider8801" />
+        <module name="cloud-alibaba-consumer-nacos-order83" />
         <module name="cloud-consumer-consul-order80" />
         <module name="cloud-config-client-3355" />
         <module name="cloud-gateway-gateway9527" />
