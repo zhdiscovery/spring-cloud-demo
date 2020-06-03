@@ -1,7 +1,10 @@
 package com.zh.controller;
 
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -29,6 +32,16 @@ public class FlowLimitController {
             e.printStackTrace();
         }
         return "-------testD";
+    }
+
+    @GetMapping("/test")
+    @SentinelResource(value = "testHotKey", blockHandler = "deal_testHotKey")
+    public String testHotKey(String p1) {
+        return "testHotKey";
+    }
+
+    public String deal_testHotKey(String p1, BlockException exception) {
+        return "deal_testHotKey";
     }
 
 
