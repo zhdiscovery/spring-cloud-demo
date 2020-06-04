@@ -12,6 +12,7 @@
         <module name="cloud-alibaba-provider-payment9003" />
         <module name="cloud-provider-hystrix-payment8001" />
         <module name="cloud-config-center-3344" />
+        <module name="cloud-alibaba-provider-payment9004" />
         <module name="cloud-alibaba-config-nacos-client3377" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-api-commons" />
