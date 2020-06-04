@@ -7,5 +7,17 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://39.96.165.167:3306/db2019</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="seata@39.96.165.167" uuid="466b3146-5907-4b33-8652-b2f0344b6f69">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://39.96.165.167:3306/seata</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="seata_order@39.96.165.167" uuid="9b97c74a-2a9e-4a0c-9134-06c73a768cba">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://39.96.165.167:3306/seata_order</jdbc-url>
+    </data-source>
   </component>
 </project>
