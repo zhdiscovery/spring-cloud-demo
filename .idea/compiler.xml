@@ -26,6 +26,7 @@
         <module name="seata-storage-service2002" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-alibaba-config-nacos-client3377" />
+        <module name="seata-order-service2003" />
         <module name="seata-order-service2001" />
         <module name="cloud-stream-rabbitmq-provider8801" />
         <module name="cloud-eureka-server7002" />
