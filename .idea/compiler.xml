@@ -23,6 +23,7 @@
         <module name="cloud-stream-rabbitmq-consumer8803" />
         <module name="cloud-alibaba-consumer-nacos-order84" />
         <module name="cloud-consumerzk-order80" />
+        <module name="seata-storage-service2002" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-alibaba-config-nacos-client3377" />
         <module name="seata-order-service2001" />

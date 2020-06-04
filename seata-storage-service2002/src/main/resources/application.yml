@@ -1,8 +1,8 @@
 server:
-  port: 2001
+  port: 2002
 spring:
   application:
-    name: seata-order-service
+    name: seata-storage-service
   cloud:
     alibaba:
       seata:
@@ -13,19 +13,14 @@ spring:
         server-addr: localhost:8848
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://39.96.165.167:3306/seata_order
+    url: jdbc:mysql://localhost:3306/seata_storage
     username: root
     password: 277708272
-
-feign:
-  hystrix:
-    enabled: false
 
 logging:
   level:
     io:
       seata: info
-
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
